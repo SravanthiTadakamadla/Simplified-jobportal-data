@@ -27,6 +27,9 @@ while($row = mysqli_fetch_array($tab_result))
    <div id="'.$row["jobid"].'" class="tab-pane fade" >
   ';
  }
+ 
+ <!-- Query shows the records which made in the interim of past 7 days which are verified and showcases just 3 records from the data.Need to alter the dates in the jobportal.sql document to show the records -->
+ 
  $content_query = "SELECT * FROM jobdetails WHERE  `date` BETWEEN DATE_SUB(CURDATE(), INTERVAL 7 DAY) AND CURDATE() && jobrole = '".$row["requirement_name"]."' && verify='1' limit 3";
  $content_result = mysqli_query($conn, $content_query);
  while($sub_row = mysqli_fetch_array($content_result))
