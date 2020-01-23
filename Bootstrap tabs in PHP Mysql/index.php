@@ -57,7 +57,7 @@ while($row = mysqli_fetch_array($tab_result))
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Automotive Hire Data</title>
+  <title>Simplified Jobportal Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
